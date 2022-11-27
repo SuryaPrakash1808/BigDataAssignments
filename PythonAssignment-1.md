@@ -1,0 +1,147 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+Ans: It is simple and also easily readable by humans
+
+Q2. Why is Python called a dynamically typed language?
+Ans: Python automatialy assign the data type for the value during runtime.
+
+Q3. List some pros and cons of Python programming language?
+Ans:
+Pros:
+    1) Simple and easy 2) Many libraries 3)Interpreted language
+Cons:
+    2)Slow 2)Design restrictions 3)Underdeveloped DB access layers
+
+Q4. In what all domains can we use Python?
+Ans: 1)Web development 2)Game development 3)Web Testing(Selinium) 4)Big data 5)Data Science
+
+Q5. What are variable and how can we declare them?
+Ans: Variable are containers for storing a value. In python, data type for a variable is declared once you asssign a value.
+
+Q6. How can we take an input from the user in Python?
+Ans: By using the input() function.
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+Ans: By default it takes the value as String type
+
+Q8. What is type casting?
+Ans: Changing the data type of one variable to another is called type casting.
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+Ans: No, We cannot able to take more than one input by using single input function. If we pass more than one value it will throw an error.
+
+Q10. What are keywords?
+Ans: Keywords are reserved words. Also we cannot able to use keywords as variables.
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+Ans: No, We cannot use keywords as variable. It will throw an error if we use keywords as variable.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+Ans: Indentation is giving some space between codes. Indentaion increase the readability and also reduces the use of paranthesis.
+
+Q13. How can we throw some output in Python?
+Ans: We can thrw output by using print() function.
+
+Q14. What are operators in Python?
+Ans: 1)Assignment operators 2)Numerical operators 3)Compaision operators 4)Logical operators 5)Identity operators 6)Bitwise operators 7)Menbership operators
+
+Q15. What is difference between / and // operators?
+Ans: /(float division)- Gives float values
+     //(Integer division)- Gives only interger values
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+Ans:
+print("iNeuroniNeuroniNeuroniNeuron")
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans:
+a=int(input("Enter the value of a = "))
+if(a%2==0):
+    print(a,"is even")
+else:
+    print(a,"is odd")
+
+Q18. What are boolean operator?
+Ans: 1)True
+     2)False
+
+Q19. What will the output of the following?
+```
+1 or 0
+Ans: 1
+
+0 and 0
+Ans: 1
+
+True and False and True
+Ans: False
+
+1 or 0 or 0
+Ans: 1
+```
+
+Q20. What are conditional statements in Python?
+Ans: 1)if
+     2)if-else
+     3)Nested if-else
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+Ans: Those keywords are used for decision making. The program will execute the code based on those condition.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+Ans:
+a=int(input("Enter the age = "))
+if(a<18):
+    print("I can't vote")
+elif(a>=18):
+    print("I can vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans:
+numbers = [12, 75, 150, 180, 145, 525, 50]
+a=0
+for x in numbers:
+    if(x%2==0):
+            a+=x
+print(a)
+    
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+Ans:
+a=int(input("enter the vaue of a = "))
+b=int(input("enter the vaue of b = "))
+c=int(input("enter the vaue of c = "))
+if(a>b and a>c):
+    print(a," is greater")
+elif(b>c and b>a):
+    print(b," is greater")
+else:
+    print(c," is greater")
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans:
+numbers = [12, 75, 150, 180, 145, 525, 50]
+for x in numbers:
+    if(x%5==0):
+        if(x<500):
+            if(x<150):
+                print(x)
+            else:
+                continue
+        else:
+            break
